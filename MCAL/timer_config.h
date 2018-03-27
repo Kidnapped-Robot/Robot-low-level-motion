@@ -1,11 +1,11 @@
 /***************************************************************
- *  Source File: pwm_config.h
+ *  Source File: timer_config.h
  *
- *  Description: PWM driver configuration for ATMEGA128
+ *  Description: Timer driver configuration for ATMEGA128
  *
  **************************************************************/
-#ifndef PWM_CONFIG_H_
-#define PWM_CONFIG_H_
+#ifndef TIMER_CONFIG_H_
+#define TIMER_CONFIG_H_
 #include <avr/io.h>
 
 
@@ -20,7 +20,7 @@
 /* Timer DDR */
 #define TIMER0_DDR						        DDRB
 #define TIMER2_DDR					         	DDRB
-/* to put in the PWM_init function */
+
 #define TIMER_0                         0
 #define TIMER_2                         2
 /* Out compare pin */
@@ -28,10 +28,12 @@
 #define OC2_OUTPUT_SETTER               7
 
 #define ZER0_INITIALIZER                0x00
-/* Max counts of timer0 is 2^8=255 */
-#define TIMER_MAX_VALUE                 255
+/* Max counts of timer0 and timer2 is 2^8=255 */
+#define TIMER_MAX_VALUE_8BIT            255
+/* Max counts of timer1 is 2^16=65536 */
+#define TIMER_MAX_VALUE_16BIT
 /* max Percentage Value (100%) */
 #define DUTY_CYCLE_MAX_VALUE            100
 
 
-#endif /* PWM_CONFIG_H_  */
+#endif /* TIMER_CONFIG_H_  */

@@ -106,7 +106,7 @@ void pwm_set_duty_cycle(uint8_t duty_cycle, uint8_t timer_number)
 	  uint8_t pwm_actual_duty ;           //duty cycle is represented by a number from 0->255
 
 
-	  pwm_actual_duty = (duty_cycle * TIMER_MAX_VALUE) / DUTY_CYCLE_MAX_VALUE;
+	  pwm_actual_duty = (duty_cycle * TIMER_MAX_VALUE_8BIT) / DUTY_CYCLE_MAX_VALUE;
 	  /*Output Compare Register OCRx
 	   * contains an 8-bit value that is continuously compared
 	   * with the counter value (TCNTx). A match can be used to
@@ -116,11 +116,11 @@ void pwm_set_duty_cycle(uint8_t duty_cycle, uint8_t timer_number)
 	  {
 
 	  case TIMER_2:
-		  OCR2 = PWM_actual_Duty;
+		  OCR2 = pwm_actual_duty;
 		  break;
 
 	  case TIMER_0:
-		  OCR0 = PWM_actual_Duty;
+		  OCR0 = pwm_actual_duty;
 		  break;
 
 	  default:

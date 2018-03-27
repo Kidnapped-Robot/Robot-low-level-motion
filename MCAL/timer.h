@@ -1,12 +1,12 @@
 /***************************************************************
- *  Source File: PWM.h
+ *  Source File: timer.h
  *
- *  Description: PWM driver for ATMEGA128
+ *  Description: Timer1 driver for ATMEGA128
  *
  **************************************************************/
 
-#ifndef PWM_H_
-#define PWM_H_
+#ifndef TIMER_H_
+#define TIMER_H_
 
 #include "timer_config.h"
 
@@ -14,8 +14,6 @@
  *  API functions
  *************************************************/
 
-void pwm_init(uint8_t);
-void pwm_set_duty_value(uint8_t, uint8_t);
-void pwm_set_duty_cycle(uint8_t, uint8_t);
+void timer1_init(void);
 
-#endif /* PWM_H_ */
+#endif /* TIMER_H_ */
