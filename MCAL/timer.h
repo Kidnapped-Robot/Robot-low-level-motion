@@ -1,5 +1,5 @@
 /***************************************************************
- *  Source File: timer.h
+ *  header File: timer.h
  *
  *  Description: Timer1 driver for ATMEGA128
  *

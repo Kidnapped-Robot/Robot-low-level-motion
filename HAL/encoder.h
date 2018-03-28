@@ -1,5 +1,5 @@
 /*
- * Source File: encoder.h
+ * header File: encoder.h
  *
  *  Description: IR_Encoder driver for ATMEGA128
  */
@@ -21,7 +21,7 @@ float ticks_left;
 
 
 /*********************************************************************
- *  API functions
+ *                              API functions
  /*********************************************************************/
 
 

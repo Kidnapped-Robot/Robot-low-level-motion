@@ -1,5 +1,5 @@
 /***************************************************************
- *  Source File: PWM.h
+ *  header File: PWM.h
  *
  *  Description: PWM driver for ATMEGA128
  *

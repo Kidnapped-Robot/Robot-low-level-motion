@@ -1,5 +1,5 @@
 /***************************************************************
- *  Source File: timer_config.h
+ *  header File: timer_config.h
  *
  *  Description: Timer driver configuration for ATMEGA128
  *

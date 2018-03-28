@@ -1,5 +1,5 @@
 /***************************************************************
- *  Source File: uart.h
+ *  header File: uart.h
  *
  *  Description: UART0 and UART1 driver for ATMEGA128
  *
