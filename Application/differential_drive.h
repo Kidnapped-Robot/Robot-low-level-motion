@@ -1,7 +1,7 @@
 /*
  * header File: differential_drive.h
  *
- *  Description: IR_Encoder driver for ATMEGA128
+ *  Description: differential_drive header file
  */
 
 
