@@ -19,7 +19,7 @@
 ***********************************************************************/
 void pwm_init(uint8_t timer_number)
 {
-	switch(TimerNumber)
+	switch(timer_number)
 	{
 	    case TIMER_2:
 	    	 /* OC2 PIN TO BE OUTPUT */

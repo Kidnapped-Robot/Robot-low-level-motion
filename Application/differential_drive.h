@@ -31,7 +31,7 @@
  #define		PI					           ((float) 3.1415)
  #define		WHEEL_CIRCUMFERENCE	   ((float) (2*WHEEL_RADIUS*PI))
  #define		ROBOT_LENGTH		       ((float) (16.5)/100.0)
- #define    MAX_RPM	   	           ((float) 280)
+
 
 
 

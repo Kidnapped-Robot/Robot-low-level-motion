@@ -79,7 +79,7 @@ void UART_Transmit_string (char * str,uint8_t UART);
 *
 * Return Value: uint8_t* str
 ***********************************************************************/
-uint8_t * uart_receive_string(uint8_t UART)
+uint8_t * uart_receive_string(uint8_t UART);
 
 
 #endif /* UART_H_ */

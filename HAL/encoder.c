@@ -1,11 +1,11 @@
-#include "motor.h"
+#include "encoder.h"
 
 
 
   void encoder_init(void){
 
     ex_interrupt_init();
-    
+
   }
 
 

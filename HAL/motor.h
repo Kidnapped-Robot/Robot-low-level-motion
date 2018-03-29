@@ -24,6 +24,7 @@
 #define   LEFT_MOTOR_PORT       PORTD
 #define   LEFT_MOTOR_DIR0        6
 #define   LEFT_MOTOR_DIR1        7
+#define    MAX_RPM	   	        ((float) 280)
 
 
 

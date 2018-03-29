@@ -68,15 +68,18 @@ uint8_t uart_receive(uint8_t UART)
 	}
 }
 
-void uart_transmit_string (char * str,uint8_t UART)
-{
+void uart_transmit_string (char * str,uint8_t UART){
+
 	unsigned char i= 0;
-	 while(str[i]!=0)
-	    {UART_Transmit(str[i],UART) ; i++;}
+
+	while(str[i]!=0) {
+		 uart_transmit(str[i],UART) ; i++;
+	 }
 }
 
 uint8_t * uart_receive_string(uint8_t UART){
-	uint8_t char i=0;
+
+	uint8_t i=0;
 	uint8_t * str;
 	do{
 		str[i]=uart_receive(UART);

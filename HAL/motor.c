@@ -9,8 +9,8 @@
    LEFT_MOTOR_DDR  |= (1<<LEFT_MOTOR_DIR0);
    LEFT_MOTOR_DDR  |= (1<<LEFT_MOTOR_DIR0);
 
-  PWM_init(TIMER_0);
-  PWM_init(TIMER_2);
+  pwm_init(TIMER_0);
+  pwm_init(TIMER_2);
 
  }
 
@@ -29,7 +29,7 @@
 	 if(speed_perc>100)
 		     speed_perc=100;
 
-	 PWM_SetDutyCycle( (uint8_t)speed_perc, TIMER_2);
+	 pwm_set_duty_cycle( (uint8_t)speed_perc, TIMER_2);
  }
 
 
@@ -47,7 +47,7 @@ void move_left_forward(float v_left_rpm)
 	if(speed_perc>100)
 		  speed_perc=100;
 
-	PWM_SetDutyCycle((uint8_t) speed_perc, TIMER_0);
+	pwm_set_duty_cycle((uint8_t) speed_perc, TIMER_0);
 }
 
 
@@ -65,7 +65,7 @@ void move_left_forward(float v_left_rpm)
 	   if(speed_perc>100)
 			  speed_perc=100;
 
-	   PWM_SetDutyCycle( (uint8_t)speed_perc, TIMER_2);
+	   pwm_set_duty_cycle( (uint8_t)speed_perc, TIMER_2);
   }
 
 
@@ -83,7 +83,7 @@ void move_left_backward(float v_left_rpm)
 	if(speed_perc>100)
 		  speed_perc=100;
 
-	PWM_SetDutyCycle((uint8_t) speed_perc, TIMER_0);
+	pwm_set_duty_cycle((uint8_t) speed_perc, TIMER_0);
 
 }
 

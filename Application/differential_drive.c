@@ -4,7 +4,7 @@
  *  Description: contains functions implementation of the differential drive module
  */
 
-#include " differential_drive.h"
+#include "differential_drive.h"
 
 
 void calc_distance(void) {
