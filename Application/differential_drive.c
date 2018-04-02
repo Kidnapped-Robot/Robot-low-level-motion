@@ -42,14 +42,13 @@ void measure(void) {
   y_pos=clac_y_pos();
   angle=calc_angle();
 
-  // mapping thr angle to [-PI,PI]
+  // mapping the angle to [-PI,PI]
   if(angle>PI)
     angle-=2*PI;
   if(angle<(-PI))
     angle+=2*PI;
   //Rintialize the variables
-  ticks_left=0;
-  ticks_right=0;
+  reset_ticks();
   distance_left_ms=0;
   distance_right_ms=0;
   distance_center_ms=0;

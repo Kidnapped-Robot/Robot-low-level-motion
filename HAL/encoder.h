@@ -51,4 +51,18 @@ void encoder_init(void);
 void ex_interrupt_init(void);
 
 
+
+/*********************************************************************
+* Function    : reset_ticks(void);
+*
+* DESCRIPTION : Restes encoders' counters.
+*
+* PARAMETERS  : Nothing.
+*
+* Return Value: Nothing
+***********************************************************************/
+void reset_ticks(void);
+
+
+
 #endif /* MOTOR_H_ */

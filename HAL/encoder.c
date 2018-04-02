@@ -19,6 +19,11 @@
 		EIMSK |= (1<<INT6)|(1<<INT7);
 	}
 
+  void reset_ticks(void){
+
+    ticks_left=0;
+    ticks_right=0;
+  }
 
 
 	ISR(INT6_vect){
