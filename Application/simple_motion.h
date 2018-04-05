@@ -19,7 +19,6 @@
 /*********************************************************************/
 
  char actions[100]; 
- int no_of_actions;
  int current_action;
  int previos_action;
  int  done;
